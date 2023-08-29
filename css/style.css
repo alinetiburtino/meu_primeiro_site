@@ -1,0 +1,122 @@
+.navigation{
+    display: grid;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(144,14,49,1) 100%);
+    height: 50px;
+    justify-content: center;
+    
+  }
+
+  h1 {
+    font-family: Bradley Hand, cursive	;
+    justify-content: center; 
+  }
+
+  nav ul {
+    list-style: none; /* Remove os marcadores de lista dos elementos da barra de navegação. */
+    display: flex; /* Usa o modelo flex para o layout da lista de navegação. */
+  }
+  
+  nav a {
+    text-decoration: none; /* Remove a decoração de link padrão. */
+    color: rgb(9, 8, 8); /* Define a cor do texto dos links de navegação. */
+    margin: 0 1rem; /* Adiciona margem horizontal aos links. */
+    transition: color 0.3s; /* Aplica uma transição suave à cor do texto ao passar o mouse. */
+  }
+  
+  nav a:hover {
+    color: #f0f0f0; /* Define a cor do texto dos links de navegação ao passar o mouse sobre eles. */
+  }
+
+
+  .logo { /* alinhando para a esquerda da nav */
+    justify-content: left;
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    width: 3%;
+}
+  
+
+
+  .title {
+    text-align: center;
+  }
+
+/* DEfinições iniciais do estilo global*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+
+}
+
+/*estilos para o container dos cartões*/
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*estilos para os cartões individuais*/
+.card {
+    background-color: #e6b0aa;
+    border: 1px solid #30353a;
+    padding: 20px;
+    box-shadow: 0 2px 4px #a5acb1;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px; /*o tamanho altera o formato */
+    margin-bottom: 10px;
+}
+
+.menu { /*não esta funcionando o alinhamento */
+    margin-left: auto; /* Empurra a barra de pesquisa para a direita. */
+    display: grid;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    width: 3%;
+}
+
+
+
+
+/*estilos aplicados quando a largura da tela é de no máximo 768px*/
+
+@media(max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.rodape{
+    display: flex;
+    align-items: center; /* alinha no sentido vertical */
+    padding: 10px 20px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(144,14,90,1) 100%);
+    height: 200px;
+    justify-content: center; /* alinhar no sentido horizontal */
+}
+
+
+.imgs-rod {
+    justify-content: center;
+    align-items: center;
+}
